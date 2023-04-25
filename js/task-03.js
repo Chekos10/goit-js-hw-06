@@ -15,10 +15,13 @@ const images = [
 
 const galleryList = document.querySelector(".gallery")
 const markup = images
-.map(img=>`<li><img class="photo" src=${img.url} alt='${img.alt}'><img><li>`)
+.map(img=>`<li><img class="photo" width = '300px' src=${img.url} alt='${img.alt}'><img><li>`)
 .join("");
 galleryList.insertAdjacentHTML("beforeend", markup);
 galleryList.style.display = "flex"
+
+
+
 
 
 
